@@ -1,0 +1,219 @@
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Jan 24 16:16:05 2018] ***
+compiled with version: 5.4.0 20160609 on 23 January 2018 09:57:53
+os: Linux-4.4.0-31-generic #50-Ubuntu SMP Wed Jul 13 00:07:12 UTC 2016
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/python/Desktop/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/Django_project/bin/uwsgi
+chdir() to /home/python/Desktop/dailyfresh
+your processes number limit is 11638
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:45644 (port auto-assigned) fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/python/.virtualenvs/Django_project
+Python main interpreter initialized at 0x185d480
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x185d480 pid: 87583 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 87583)
+spawned uWSGI worker 1 (pid: 87585, cores: 2)
+spawned uWSGI worker 2 (pid: 87586, cores: 2)
+spawned uWSGI worker 3 (pid: 87587, cores: 2)
+spawned uWSGI worker 4 (pid: 87589, cores: 2)
+spawned uWSGI http 1 (pid: 87590)
+[pid: 87589|app: 0|req: 1/1] 127.0.0.1 () {36 vars in 608 bytes} [Wed Jan 24 16:19:30 2018] GET /index => generated 79 bytes in 2336 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87589|app: 0|req: 2/2] 127.0.0.1 () {36 vars in 557 bytes} [Wed Jan 24 16:19:32 2018] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87585|app: 0|req: 1/3] 127.0.0.1 () {36 vars in 618 bytes} [Wed Jan 24 16:19:43 2018] GET /user/login => generated 2110 bytes in 649 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 87589|app: 0|req: 3/4] 127.0.0.1 () {38 vars in 652 bytes} [Wed Jan 24 16:19:44 2018] GET /static/css/reset.css => generated 94 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87587|app: 0|req: 1/5] 127.0.0.1 () {38 vars in 670 bytes} [Wed Jan 24 16:19:44 2018] GET /static/images/logo02.png => generated 98 bytes in 2006 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87586|app: 0|req: 1/6] 127.0.0.1 () {38 vars in 650 bytes} [Wed Jan 24 16:19:44 2018] GET /static/css/main.css => generated 93 bytes in 2202 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87587|app: 0|req: 2/7] 127.0.0.1 () {40 vars in 705 bytes} [Wed Jan 24 16:33:39 2018] GET /user/login => generated 2110 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 87589|app: 0|req: 4/8] 127.0.0.1 () {38 vars in 652 bytes} [Wed Jan 24 16:33:39 2018] GET /static/css/reset.css => generated 94 bytes in 16 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87585|app: 0|req: 3/9] 127.0.0.1 () {38 vars in 670 bytes} [Wed Jan 24 16:33:39 2018] GET /static/images/logo02.png => generated 98 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87585|app: 0|req: 3/10] 127.0.0.1 () {38 vars in 650 bytes} [Wed Jan 24 16:33:39 2018] GET /static/css/main.css => generated 93 bytes in 18 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87589|app: 0|req: 5/11] 127.0.0.1 () {36 vars in 598 bytes} [Wed Jan 24 16:34:52 2018] GET / => generated 74 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87585|app: 0|req: 4/12] 127.0.0.1 () {36 vars in 552 bytes} [Wed Jan 24 16:34:52 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87589|app: 0|req: 6/13] 127.0.0.1 () {36 vars in 618 bytes} [Wed Jan 24 16:35:02 2018] GET /user/login => generated 2110 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 87589|app: 0|req: 7/14] 127.0.0.1 () {38 vars in 652 bytes} [Wed Jan 24 16:35:02 2018] GET /static/css/reset.css => generated 94 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87585|app: 0|req: 5/15] 127.0.0.1 () {38 vars in 650 bytes} [Wed Jan 24 16:35:02 2018] GET /static/css/main.css => generated 93 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87586|app: 0|req: 2/16] 127.0.0.1 () {38 vars in 670 bytes} [Wed Jan 24 16:35:02 2018] GET /static/images/logo02.png => generated 98 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87589|app: 0|req: 8/17] 127.0.0.1 () {40 vars in 705 bytes} [Wed Jan 24 16:47:24 2018] GET /user/login => generated 2110 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 87589|app: 0|req: 9/18] 127.0.0.1 () {38 vars in 651 bytes} [Wed Jan 24 16:47:24 2018] GET /static/css/reset.css => generated 94 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87587|app: 0|req: 3/19] 127.0.0.1 () {38 vars in 649 bytes} [Wed Jan 24 16:47:24 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87586|app: 0|req: 3/20] 127.0.0.1 () {38 vars in 669 bytes} [Wed Jan 24 16:47:24 2018] GET /static/images/logo02.png => generated 98 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87586|app: 0|req: 4/21] 127.0.0.1 () {40 vars in 705 bytes} [Wed Jan 24 16:47:26 2018] GET /user/login => generated 2110 bytes in 34 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 87587|app: 0|req: 4/22] 127.0.0.1 () {38 vars in 651 bytes} [Wed Jan 24 16:47:26 2018] GET /static/css/reset.css => generated 94 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87586|app: 0|req: 5/23] 127.0.0.1 () {38 vars in 649 bytes} [Wed Jan 24 16:47:26 2018] GET /static/css/main.css => generated 93 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87587|app: 0|req: 5/24] 127.0.0.1 () {38 vars in 669 bytes} [Wed Jan 24 16:47:26 2018] GET /static/images/logo02.png => generated 98 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87589|app: 0|req: 10/25] 127.0.0.1 () {40 vars in 706 bytes} [Wed Jan 24 16:48:16 2018] GET /user/login => generated 2110 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 87589|app: 0|req: 11/26] 127.0.0.1 () {38 vars in 652 bytes} [Wed Jan 24 16:48:16 2018] GET /static/css/reset.css => generated 94 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87585|app: 0|req: 6/27] 127.0.0.1 () {38 vars in 650 bytes} [Wed Jan 24 16:48:16 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87585|app: 0|req: 7/28] 127.0.0.1 () {38 vars in 670 bytes} [Wed Jan 24 16:48:16 2018] GET /static/images/logo02.png => generated 98 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87586|app: 0|req: 6/29] 127.0.0.1 () {40 vars in 706 bytes} [Wed Jan 24 16:48:18 2018] GET /user/login => generated 2110 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 87587|app: 0|req: 6/30] 127.0.0.1 () {38 vars in 652 bytes} [Wed Jan 24 16:48:18 2018] GET /static/css/reset.css => generated 94 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87587|app: 0|req: 7/31] 127.0.0.1 () {38 vars in 650 bytes} [Wed Jan 24 16:48:18 2018] GET /static/css/main.css => generated 93 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87585|app: 0|req: 8/32] 127.0.0.1 () {38 vars in 670 bytes} [Wed Jan 24 16:48:18 2018] GET /static/images/logo02.png => generated 98 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87586|app: 0|req: 7/33] 127.0.0.1 () {38 vars in 675 bytes} [Wed Jan 24 16:48:55 2018] GET /user/login => generated 2110 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 87589|app: 0|req: 12/34] 127.0.0.1 () {38 vars in 652 bytes} [Wed Jan 24 16:48:55 2018] GET /static/css/reset.css => generated 94 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87587|app: 0|req: 8/35] 127.0.0.1 () {38 vars in 650 bytes} [Wed Jan 24 16:48:55 2018] GET /static/css/main.css => generated 93 bytes in 12 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87589|app: 0|req: 13/36] 127.0.0.1 () {38 vars in 670 bytes} [Wed Jan 24 16:48:55 2018] GET /static/images/logo02.png => generated 98 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87589|app: 0|req: 14/37] 127.0.0.1 () {40 vars in 706 bytes} [Wed Jan 24 16:51:47 2018] GET /user/login => generated 2110 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 87589|app: 0|req: 15/38] 127.0.0.1 () {38 vars in 652 bytes} [Wed Jan 24 16:51:48 2018] GET /static/css/reset.css => generated 94 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87585|app: 0|req: 9/39] 127.0.0.1 () {38 vars in 650 bytes} [Wed Jan 24 16:51:48 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87585|app: 0|req: 10/40] 127.0.0.1 () {38 vars in 670 bytes} [Wed Jan 24 16:51:48 2018] GET /static/images/logo02.png => generated 98 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87589|app: 0|req: 16/41] 127.0.0.1 () {40 vars in 706 bytes} [Wed Jan 24 16:51:49 2018] GET /user/login => generated 2110 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 87589|app: 0|req: 17/42] 127.0.0.1 () {38 vars in 652 bytes} [Wed Jan 24 16:51:49 2018] GET /static/css/reset.css => generated 94 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87585|app: 0|req: 11/43] 127.0.0.1 () {38 vars in 650 bytes} [Wed Jan 24 16:51:49 2018] GET /static/css/main.css => generated 93 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87587|app: 0|req: 9/44] 127.0.0.1 () {38 vars in 670 bytes} [Wed Jan 24 16:51:49 2018] GET /static/images/logo02.png => generated 98 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 87586|app: 0|req: 8/45] 127.0.0.1 () {40 vars in 706 bytes} [Wed Jan 24 16:51:51 2018] GET /user/login => generated 2110 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 87587|app: 0|req: 10/46] 127.0.0.1 () {38 vars in 652 bytes} [Wed Jan 24 16:51:52 2018] GET /static/css/reset.css => generated 94 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87586|app: 0|req: 9/47] 127.0.0.1 () {38 vars in 650 bytes} [Wed Jan 24 16:51:52 2018] GET /static/css/main.css => generated 93 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 87587|app: 0|req: 11/48] 127.0.0.1 () {38 vars in 670 bytes} [Wed Jan 24 16:51:52 2018] GET /static/images/logo02.png => generated 98 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 87590)
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Jan 24 16:53:54 2018] ***
+compiled with version: 5.4.0 20160609 on 23 January 2018 09:57:53
+os: Linux-4.4.0-31-generic #50-Ubuntu SMP Wed Jul 13 00:07:12 UTC 2016
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/python/Desktop/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/Django_project/bin/uwsgi
+chdir() to /home/python/Desktop/dailyfresh
+your processes number limit is 11638
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/python/.virtualenvs/Django_project
+Python main interpreter initialized at 0x180d370
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x180d370 pid: 88288 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 88288)
+spawned uWSGI worker 1 (pid: 88290, cores: 2)
+spawned uWSGI worker 2 (pid: 88291, cores: 2)
+spawned uWSGI worker 3 (pid: 88292, cores: 2)
+spawned uWSGI worker 4 (pid: 88293, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Jan 24 16:55:05 2018] ***
+compiled with version: 5.4.0 20160609 on 23 January 2018 09:57:53
+os: Linux-4.4.0-31-generic #50-Ubuntu SMP Wed Jul 13 00:07:12 UTC 2016
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/python/Desktop/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/python/.virtualenvs/Django_project/bin/uwsgi
+chdir() to /home/python/Desktop/dailyfresh
+your processes number limit is 11638
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/python/.virtualenvs/Django_project
+Python main interpreter initialized at 0x24d8370
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415360 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x24d8370 pid: 88322 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 88322)
+spawned uWSGI worker 1 (pid: 88324, cores: 2)
+spawned uWSGI worker 2 (pid: 88325, cores: 2)
+spawned uWSGI worker 3 (pid: 88326, cores: 2)
+spawned uWSGI worker 4 (pid: 88327, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+[pid: 88324|app: 0|req: 1/1] 127.0.0.1 () {38 vars in 631 bytes} [Wed Jan 24 17:03:38 2018] GET / => generated 74 bytes in 313 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 88324|app: 0|req: 2/2] 127.0.0.1 () {38 vars in 651 bytes} [Wed Jan 24 17:03:45 2018] GET /user/login => generated 2110 bytes in 35 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 88324|app: 0|req: 3/3] 127.0.0.1 () {50 vars in 922 bytes} [Wed Jan 24 17:03:58 2018] POST /user/login => generated 0 bytes in 1259 msecs (HTTP/1.1 302) 7 headers in 477 bytes (1 switches on core 0)
+[pid: 88324|app: 0|req: 4/4] 127.0.0.1 () {44 vars in 818 bytes} [Wed Jan 24 17:03:59 2018] GET /goods/ => generated 14541 bytes in 1219 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 88324|app: 0|req: 5/5] 127.0.0.1 () {42 vars in 775 bytes} [Wed Jan 24 17:46:58 2018] GET /goods/ => generated 14541 bytes in 738 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 88324|app: 0|req: 6/6] 127.0.0.1 () {40 vars in 752 bytes} [Wed Jan 24 17:47:07 2018] GET /user/login => generated 2110 bytes in 63 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)

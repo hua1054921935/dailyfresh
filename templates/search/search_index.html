@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+搜索关键字{{ query }}
+当前页对象{{ page }}
+<ul>
+    {% for item in page %}
+    <li>{{ item.object }}</li>
+    {% endfor %}
+
+分页对像{{ paginator }}
+分页总数{{ paginator.num_pages }}
+</ul>
+</body>
+</html>
