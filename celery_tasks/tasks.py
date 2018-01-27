@@ -1,17 +1,17 @@
-from celery import Celery
+
 from django.conf import settings
+from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.template import loader
-from apps.goods.models import GoodsType,IndexPromotionBanner,IndexGoodsBanner,IndexTypeGoodsBanner
 import os
-# import django
-#
-# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dailyfresh.settings")
-# django.setup()
-
+from celery import Celery
+import django
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dailyfresh.settings")
+django.setup()
+from apps.goods.models import GoodsType,IndexPromotionBanner,IndexGoodsBanner,IndexTypeGoodsBanner
 
 #建立celery类对像
-app=Celery('celery_tasks.tasks',broker='redis://127.0.0.1:6379/12')
+app=Celery('celery_tasks.tasks',broker='redis://127.0.0.1:6379/11')
 
 @app.task
 def send_mail_register(email,username,token):
@@ -70,10 +70,13 @@ def generate_static_index_html():
                'cart_count': cart_count}
 
     # 3. 模板渲染，生成html页面的内容
+
     static_index = temp.render(context)
+
 
     # 保存一个首页静态文件
     save_path = os.path.join(settings.BASE_DIR, 'static/index.html')
+
 
     with open(save_path, 'w') as f:
         f.write(static_index)

@@ -157,7 +157,7 @@ DEFAULT_FILE_STORAGE = 'utils.fdfs.storage.FDFSStorage'
 FDFS_CLIENT_CONF = os.path.join(BASE_DIR, 'utils/fdfs/client.conf')
 
 # 设置FDFS服务器上Nginx的ip和port
-FDFS_NGINX_URL ='http://192.168.230.128:8888/'
+FDFS_NGINX_URL ='http://192.168.159.128:8888/'
 # 全文检索框架配置
 HAYSTACK_CONNECTIONS = {
     'default': {
